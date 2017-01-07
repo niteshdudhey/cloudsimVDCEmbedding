@@ -22,9 +22,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/cloudsim"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cloudsim-examples"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/documentation"/>
-	<classpathentry kind="lib" path="/home/nitesh/Documents/RnD/externalJars/guava-master/guava/target/guava-21.0-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
