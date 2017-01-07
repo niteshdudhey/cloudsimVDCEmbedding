@@ -4,8 +4,10 @@
 package cloudsimExtension.cloudsimVDCEmbedding;
 
 /**
- * @author nitesh
  * The global constants.
+ * 
+ * @author Nitesh Dudhey.
+ * 
  */
 public final class Constants {
 	public enum switchType {ROOT(0), AGGREGATE(1), EDGE(2);

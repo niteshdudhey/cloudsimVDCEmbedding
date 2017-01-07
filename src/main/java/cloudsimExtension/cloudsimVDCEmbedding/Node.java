@@ -4,10 +4,12 @@ package cloudsimExtension.cloudsimVDCEmbedding;
  * The interface to represent a node in the both virtual and physical network.
  * This is to be modified.
  * 
- * @author nitesh
+ * @author Nitesh Dudhey
  *
  */
-public interface Node {
-	public int getId();
-	public void setId(int id);
+public abstract class Node extends NetworkEntity {
+
+	public Node(String name, int id) {
+		super(name, id);
+	}
 }

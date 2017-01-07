@@ -5,23 +5,29 @@ import org.cloudbus.cloudsim.core.SimEvent;
 
 /**
  * A switch in both physical and virtual network.
- * @author nitesh
+ * 
+ * @author Nitesh Dudhey
  *
  */
-public class Switch extends SimEntity implements Node {
+public class Switch extends Node {
 	
-	private int id;
-	
+	public Switch(String name, int id, Constants.switchType type) {
+		super(name, id);
+		setType(type);
+	}
+
 	private Constants.switchType type;
 	
+	public Constants.switchType getType() {
+		return type;
+	}
+
+	public void setType(Constants.switchType type) {
+		this.type = type;
+	}
+
 	ForwardingRule forwardingTable;
 	RoutingTable routingTable;	
-	
-	public Switch(String name, Constants.switchType type) {
-		super(name);
-		this.type = type;
-		// TODO Auto-generated constructor stub
-	}
 	
 	@Override
 	public void startEntity() {
@@ -36,13 +42,5 @@ public class Switch extends SimEntity implements Node {
 	@Override
 	public void shutdownEntity() {
 		// TODO Auto-generated method stub
-	}
-	
-	public int getId(){
-		return id;
-	}
-	
-	public void setId(int id){
-		this.id = id;
 	}
 }

@@ -14,27 +14,17 @@ import org.cloudbus.cloudsim.network.datacenter.NetworkHost;
  * 
  * TODO: would be good to implement the host from scratch (by extending Host)
  *  
- * @author nitesh
+ * @author Nitesh Dudhey
  *
  */
-public class NetHost extends SimEntity implements Node{
+public class NetHost extends Node{
 	
-	private int id;
-	
-	public NetHost(String name) {
-		super(name);
+	public NetHost(String name, int id) {
+		super(name, id);
 		// TODO Auto-generated constructor stub
 	}
 	
 	NetworkHost host;
-
-	public int getId(){
-		return id;
-	}
-	
-	public void setId(int id){
-		this.id = id;
-	}
 	
 	@Override
 	public void startEntity() {
