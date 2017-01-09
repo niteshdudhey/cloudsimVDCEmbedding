@@ -12,6 +12,9 @@ import org.cloudbus.cloudsim.network.datacenter.NetworkHost;
  * Currently it contains an instance of NetworkHost. If the packet implementation
  * from cloudsim is not used then, NetworkHost cannot be used.
  * 
+ * NetworkHost cannot be used as it considers only packet send and receive.
+ * It does not consider Computational workload.
+ * 
  * TODO: would be good to implement the host from scratch (by extending Host)
  *  
  * @author Nitesh Dudhey
