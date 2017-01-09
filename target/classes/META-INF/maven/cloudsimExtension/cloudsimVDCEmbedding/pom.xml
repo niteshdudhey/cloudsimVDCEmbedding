@@ -22,4 +22,10 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <parent>
+  	<groupId>org.cloudbus.cloudsim</groupId>
+  	<artifactId>cloudsim-package</artifactId>
+  	<version>4.0</version>
+  	<relativePath>../cloudsim-package</relativePath>
+  </parent>
 </project>
