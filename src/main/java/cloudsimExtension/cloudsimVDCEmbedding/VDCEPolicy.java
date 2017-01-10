@@ -1,5 +1,12 @@
 package cloudsimExtension.cloudsimVDCEmbedding;
 
-public interface VDCEPolicy {
+public abstract class VDCEPolicy {
+		
+	public VDCEPolicy() {
+	}
+	
+	public VDCEmbedding embed(VDatacenter vdc, PDatacenter pdc) {
+		return null;
+	}
 	
 }
